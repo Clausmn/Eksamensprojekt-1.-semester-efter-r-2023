@@ -1,0 +1,1371 @@
+/*-- Reset --*/
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    line-height: calc(1em + 0.5rem);
+}
+
+/*-- error.html --*/
+.error {
+text-align: center;
+margin: 0 auto;
+max-width: 600px;
+margin-top: 200px;
+font-size:50px;
+}
+
+/*-- ttf font --*/
+@font-face {
+    font-family: myFirstFont;
+    src: url(HelveticaNeueUltraLightv130.ttf);
+}
+/*-- ttf font2 --*/
+@font-face {
+    font-family: myFirstFont2;
+    src: url(HelveticaNeueHv.ttf);
+}
+
+/*-- General styling --*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F5DEB3;
+    overflow-x: hidden;
+}
+
+main {
+  margin-bottom: 500px;
+}
+
+h1 {
+  position: relative;
+  margin-left: 43%;
+  color: black;
+}
+
+
+h2 {
+ text-align: center;
+  color: black;
+  opacity: 100%;
+  font-weight: 1000;
+  margin-top: 25%;
+  font-size: 30px;
+  font-family: myFirstFont;
+}
+
+
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/*-- Styling for header --*/
+.topnav {
+    overflow: hidden;
+    height: 500px;
+    padding: 1rem;
+    background-color: #F5DEB3;
+}
+
+.topnav img {
+    width: 150px;
+    display: block;
+    padding-right: 1rem;
+}
+
+.header__icons {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-end;
+  margin-top:18px;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+
+
+.topnav .icon {
+    display: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+  
+
+.dropdown .dropbtn {
+    font-size: 30px;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: 'Anton', sans-serif;
+    font-weight: 500;
+    z-index: 2;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 5px 10px;
+    display: block;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+    font-weight: 600;
+}
+
+.dropdown-content a:hover {
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.header__search,
+.header__shopping {
+    color: black;
+    background-color: rgb(255, 255, 0, 0);
+    border: none;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 8px 1rem 0 1rem;
+}
+
+/* ---- Index.html style ---- */
+
+.hr-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column; /* Stack elements vertically on small screens */
+}
+
+hr {
+    width: 100%; /* Take up the full width of the container */
+    border: none;
+    height: 1px; /* Adjust as needed */
+    background-color: #000; /* Adjust the color as needed */
+    margin: 10px 0; /* Add margin to separate elements */
+}
+
+.word-container {
+    padding: 10px; /* Adjust the padding as needed */
+}
+
+.word {
+    background-color: #fff; /* Adjust the background color as needed */
+    padding: 5px; /* Adjust the padding as needed */
+}
+
+
+
+
+section { 
+  padding: 32px
+} 
+/* Forside styling */
+
+.forsideimg2 {
+  max-width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  position: relative;
+  z-index:-1;
+}
+
+/* ---- Forside artikler styling mobil ---- */
+
+.articles-container {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+gap:50px;
+margin:20px;
+
+margin-top: 20%;
+}
+
+article {
+text-align: center;
+background-color: white;
+padding: 20px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+flex: 1 1 calc(50% - 20px); 
+max-width: calc(50% - 20px); 
+margin: 10px;
+border: 0px solid #ddd; 
+border-radius: 10px; 
+}
+
+article img {
+max-width: 100%;
+height: auto;
+transition: transform 0.3s ease-in-out;
+}
+
+article:hover img {
+transform: scale(1.05);
+}
+
+article h2 {
+margin-top: 10px;
+font-size: 1.5em;
+}
+
+article p {
+margin-top: 10px;
+color: #555;
+max-width: 100%;
+overflow: hidden;
+text-overflow: ellipsis;
+font-family: myFirstfont;
+font-weight:1000;
+font-size:17px;
+}
+
+.h2sund {
+font-size: 40px;
+border: none;
+outline: none;
+color: black;
+padding: 14px 16px;
+background-color: inherit;
+font-family: myFirstfont;
+font-weight: bolder;
+}
+
+article {
+flex: 1 1 100%; /* Fuld width for column på Mobile version */
+max-width: 100%; /* Fuld width for column på Mobile version */
+}
+
+
+
+
+
+
+.grid-item.in-view {
+  opacity: 1;
+  transform: translateX(-1%);
+}
+
+ /* styling for zero.html produkt info*/
+
+   /* Zero summer produkt mobil*/
+
+
+
+.tekst-summer {
+    background-color: #779e98;
+    margin: -45% auto;
+    padding: 5%;
+    border-radius: 10px;
+    max-width: 1900px; /* Adjusted max-width for a more compact look on desktop */
+    text-align: center; /* Center text content */
+    color:white;
+}
+
+
+.overskrift-summer {
+    margin-top: 20px; /* Add some space between the paragraphs and the heading */
+}
+
+.køb:hover {
+    background-color: #40666a; 
+}
+
+
+.kob-knap2 {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #a0c4c6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.kob-knap {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #f5deb3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Indhold liste zero.html */
+.hidden-list {
+  display: none;
+  list-style-type: none;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #789f99;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:10px;
+}
+#info-list li {
+  margin-bottom: 10px;
+  margin-top: 20px;
+  
+}
+
+#toggle-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  border-radius: 8px;
+  opacity: 100%;
+  background-color: #789f99;
+  padding: 10px;
+  color:white;
+}
+
+
+/* ---- index.html tekst style ---- */
+.anbefaler {
+  margin-top:70%;
+  font-size: 50px;
+  font-family:myFirstfont;
+  font-weight:bolder;
+  }
+
+  /*-- index.html image --*/
+  .forsideimg {
+  max-width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  transition: transform 0.5s ease;
+}
+    
+
+/* ---- START FOOTER ---- */
+
+.footer {
+  text-align:center;
+  font-size: 0.85rem;
+  padding: 20px 0;
+  line-height: 1.6;
+  bottom: 0;
+  margin-top: 50px;
+  background-color: #789f99;
+}
+
+.footer__text,
+.footer__link,
+.footer__title {
+  color: white;
+  padding: 3px 15px;
+  display: block;
+}
+
+
+.footer__hr {
+  height: 1px;
+  border: 1px;
+
+}
+
+.footer__sections {
+  display: flex;
+  align-content: end;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+
+.footer__section {
+  box-sizing: border-box;
+  width: 25%;
+  padding: 15px 0;
+  flex-shrink: 0;
+ 
+}
+
+.footer__title {
+  font-weight: bolder;
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-family: myFirstfont;
+}
+
+.footer__link {
+  text-decoration: none;
+  font-family: myFirstfont;
+  font-weight: bolder;
+  font-size: 17px;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
+}
+
+  
+  /* Style for footer icons*/
+  .fa.fa {
+    padding: 1px;
+    font-size: 20px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px -3px;
+    margin-left: 6px;
+  }
+  
+  .fa.fa-twitter {
+    background: transparent;
+    color: #f5deb3;
+    border-radius: 6px;
+  }
+  
+  .fa.fa-linkedin {
+    background: transparent;
+    color: #f5deb3;
+    border-radius: 6px;
+    
+    
+  }
+  
+  .fa.fa-facebook {
+    background: transparent;
+    color: #f5deb3;
+    border-radius: 20px;
+    
+  }
+ 
+  .fa.fa-instagram {
+    background: transparent;
+    color: #f5deb3;
+    border-radius: 6px;
+  }
+  
+  .fa:hover {
+    opacity: 1;
+    color: #000000;
+    transform: scale(1.5);
+  }
+  /* ---- SLUT FOOTER ---- */
+
+@media screen and (max-width: 768px) {
+/* ---- Om.html  ---- */
+.omosgrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+    background-color: #63a09a;
+}
+  
+.omos-tekst {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 900;
+    font-family: myFirstfont;
+    color: black;
+    line-height: 1.5;
+    height: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+}
+  /* ---- Header ikoner ---- */
+.header__icons {
+    display: flex;
+  justify-content:center;
+    align-items: center;
+    text-align: center;
+  margin-top:0px;
+}
+
+ /* ---- zero.html overskrift ---- */
+#zerosummer-overskrift {
+    color: white;
+    margin-top: 50%;
+}
+  
+.produkt-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: -50%;
+  background-color: #639f9a; 
+  border-radius: 15px; 
+  padding: 20px; 
+}
+
+.produkt1-container {
+  text-align: center;
+  margin: 0 10px; 
+  margin-top:30%;
+  color:white;
+  font-family:myFirstfont;
+  font-weight:bolder;
+}
+  
+.produkt1 {
+  max-width: 30%; /* Make the image full width on mobile */
+  margin-top:100px;
+}
+  
+  .forside-tekst {
+    font-size: 15px;
+    font-family: myFirstfont;
+    text-align:center;
+    font-weight: bold; 
+  }
+  
+  .h1sund {
+    font-size: 40px;
+    text-align:center;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: myFirstfont;
+    font-weight: bolder;
+    margin-left: -1%;
+}
+  
+   .forside {
+    position: relative;  
+}
+  
+  .velkomst-overskrift { 
+  font-family:myFirstfont;
+  font-weight: bolder;
+  font-size: 25px;
+  }
+  .om-tekst {
+      text-align: center;
+      max-width: 700px;
+      padding: 20px;
+      line-height: 2;
+      font-size:15px;
+      font-family: myFirstfont ariel sans;
+      margin-top:-100%;
+      color:white;
+    }
+
+    .topnav a:not(:first-child),
+    .dropdown .dropbtn, 
+    .topnav .header__search {
+        display: none;
+    }
+  .køb {
+    display: inline-block; /* Make the link a block to add margin */
+    margin-left: 23%;
+    margin-top: 50px; /* Add space above the link */
+    text-decoration: none; /* Remove the underline */
+    color: white;
+    background-color: #528583;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+  
+.produktoverskrift {
+    margin-top: -50%;
+    font-weight:bolder;
+    font-size:50px;
+  }
+  
+#shop-container {
+grid-template-columns: 1fr; /* Change to a single column layout */
+gap: 10px; /* Adjust the gap for smaller screens */ }
+  
+#shop-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:-2%;
+  text-align:center;
+}
+  
+  #shop, #shop1, #shop2, #shop3, #shop4, #shop5 {
+  width: 75%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: auto;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #63a09a;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  font-weight:bolder;
+}
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+
+.header__icons {
+
+ }
+
+   .zero {
+    display: none
+   }
+  .topnav.responsive {
+        position: relative;
+    }
+  
+  .topnav {
+    background-color: #F5DEB3;
+  }
+
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a, 
+    .topnav.topnav.responsive .header__search {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .topnav.responsive .dropdown {
+        float: none;
+    }
+
+    .topnav.responsive .dropdown-content {
+        position: relative;
+    }
+
+    .topnav.responsive .dropdown .dropbtn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        font-family: myFirstfont;
+        font-weight: bolder;
+    }
+
+    .footer__sections {
+      flex-direction: column;
+    }
+    
+    .footer__section {
+      width: 100%;
+    }
+  
+  /*Slideshow/keyframes alkoholfri.html mobil*/
+.slideshow-container {
+  width: 96%;
+  overflow: hidden;
+  border: none;
+  border-radius: 8px;
+  box-shadow: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -10%;
+}
+
+/*Images*/
+.wrapper{
+  width: 100%;
+  display: flex;
+  animation: slide 10s infinite;
+}
+
+img{
+  width: 100%;
+}
+/*Animation aktiveret af keyframes*/
+@keyframes slide{
+  0%{
+      transform: translateX(0);
+  }
+  25%{
+      transform: translateX(0);
+  }
+  30%{
+      transform: translateX(-100%);
+  }
+  50%{
+      transform: translateX(-100%);
+  }
+  55%{
+      transform: translateX(-200%);
+  }
+  75%{
+      transform: translateX(-200%);
+  }
+  80%{
+      transform: translateX(-300%);
+  }
+  100%{
+      transform: translateX(-300%);
+  }
+}
+ 
+}
+
+
+ /* ---- Dropdown pile vises ikke på mobil version  ---- */
+    .fa.fa-caret-down {
+      display: none;
+    }
+
+ .anbefaler {
+    margin-top:70%;
+  }
+
+.velkomst-overskrift {
+  margin-left:2%;
+  margin-top:-125%;
+  color: white;
+}
+
+.om-tekst {
+    text-align: center;
+    max-width: 80%;
+    margin: 0 auto;
+    line-height: 1.5;
+    color: white;
+    font-family:myFirstfont;
+    font-weight:bold;
+    font-size: 18px;
+}
+
+/*-- ---------------- --*/
+/*    DESKTOP STYLE     */
+/*-- ---------------- --*/
+@media screen and (min-width: 1024px) {
+  
+  /*-- Index.html (forside) --*/
+  .velkomst-overskrift {
+    float:left;
+    color: white;
+    font-family: myFirstfont;
+    font-weight: bolder;
+    font-size: 70px;
+    margin-left: 4%;
+    margin-top: -32%;
+}
+
+.om-tekst {
+    position: absolute;
+    float:left;
+    text-align: center;
+    max-width: 35%;
+    margin: 0 auto;
+    margin-left: 4%;
+    line-height: 1.7;
+    color: white;
+    font-family: myFirstfont;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-top: -25%;
+}
+  
+   h2 {
+        text-align: center;
+        margin-top: 15%;
+        color: black;
+        opacity: 80%;
+        font-size: 60px;
+        font-weight: 1000;
+    }
+
+ .forside {
+    position: relative;
+    width: 95%;
+    margin: 0 auto; /* Center horizontally */
+    display: block; /* Ensure it behaves as a block-level element */
+    margin-top:0.5%;
+}
+
+
+.smag2 {
+  margin-top: 20%;
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+
+ .anbefaler {
+    margin-top:5%;
+   font-size: 75px;
+   font-weight: bolder;
+   font-family: myFirstfont;
+  }
+  
+ .forside-tekst {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: myFirstfont;
+  font-weight: bolder;
+  font-size:25px;
+}
+
+
+
+ /*Slideshow/keyframes index.html*/
+.slideshow-container {
+  width: 50%;
+  overflow: hidden;
+  border: none;
+  border-radius: 8px;
+  box-shadow: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+}
+
+/*Images*/
+.wrapper{
+  width: 100%;
+  display: flex;
+  animation: slide 10s infinite;
+}
+
+img{
+  width: 100%;
+}
+/*Animation aktiveret af keyframes Desktop*/
+@keyframes slide{
+  0%{
+      transform: translateX(0);
+  }
+  25%{
+      transform: translateX(0);
+  }
+  30%{
+      transform: translateX(-100%);
+  }
+  50%{
+      transform: translateX(-100%);
+  }
+  55%{
+      transform: translateX(-200%);
+  }
+  75%{
+      transform: translateX(-200%);
+  }
+  80%{
+      transform: translateX(-300%);
+  }
+  100%{
+      transform: translateX(-300%);
+  }
+}
+  /* teskt-summer zero.html Desktop */
+ .tekst-summer {
+    background-color: #639f9a;
+    margin: -20% auto;
+    padding: 5%;
+    border-radius: 10px;
+    max-width: 80%;
+    text-align: center; 
+   height: 1500px;
+}
+  /* Footer ændring til desktop */
+.footer {
+  font-size: 0.85rem;
+  padding: 20px 0;
+  line-height: 1.6;
+  bottom: 0;
+  margin-top: 50px;
+  background-color: #789f99;
+}
+
+
+section {
+  display: flex;
+  justify-content: center;
+}
+
+.section-content {
+  max-width: 1220px;
+  width: 100%;
+  padding: 2em 0;
+}
+  
+/* index.html (forside) artikler */
+.articles-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  gap: 2%; 
+}
+
+article {
+  margin: 20px;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  max-width: 400px;
+  /* Animation af artiklerne (index.html) */
+  transform: translateY(-100px);
+  transition: opacity 0.6s ease-in-out, transform 1s ease-in-out;
+}
+
+article img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+article:hover img {
+  transform: scale(1.05);
+}
+
+article h2 {
+  margin-top: 10px;
+  font-size: 1.5em;
+}
+
+article p {
+  margin-top: 10px;
+  color: black;
+  max-width: 100%; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: myFirstfont;
+  font-size: 18px;
+  font-weight:bolder;
+  line-height: 1.5;
+}
+
+.h2sund {
+  font-size: 40px;
+    border: none;
+    outline: none;
+    color: black;
+    
+    background-color: inherit;
+    font-family: myFirstfont;
+    font-weight: bolder;
+}
+  
+  .h1sund {
+    font-size: 50px;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: myFirstfont;
+    font-weight: bolder;
+    margin-left: -1%
+  }
+ 
+.overskrift-summer {
+    margin-top: 50px; 
+    color:white;
+}
+/* Køb Zero summer knap zero.html */
+  .center-container {
+    text-align: center;
+    margin-right:46%;
+    margin-top:-4%;
+}
+  
+.køb {
+    margin-top: 30px;
+    text-decoration: none;
+    color: white;
+    background-color: #528583;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+
+.køb:hover {
+    background-color: #40666a;
+}
+
+  .zeromobile { /*-- Så zeromobile image ikke vises på desktop --*/
+    display:none;
+  }
+
+  .topnav {
+    overflow: hidden;
+    height: 300px;
+    padding: 1rem;
+    
+}
+
+/*-- Dekstop header style--*/
+
+.topnav img {
+  width: 250px;
+  display: block;
+  padding-right: 1rem;
+  transition: width 0.2s ease-in-out;
+}
+
+.dropdown .dropbtn {
+  margin: 5px;
+  margin-top: -20px;
+}
+  
+  .dropbtn {
+    font-family: myFirstfont;
+  }
+
+.dropdown .dropbtn  {
+  font-size: 25px;
+  border: none;
+  outline: none;
+  color: black;
+  background-color: inherit;
+  font-family: myFirstfont;
+  font-weight: bolder;
+  font-size:30px;
+  margin-top: -1px;
+}
+
+/* -- Alkoholfri.html style desktop -- */
+ 
+  .produktoverskrift {
+    margin-top: 1%;
+    font-weight:bolder;
+    font-size:70px;
+  }
+#shop-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px; 
+  margin-top:4%
+}
+
+#shop,#shop1,#shop2,#shop3,#shop4,#shop5 {
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #63a09a;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  font-weight:bolder;
+}
+
+li {
+  margin-bottom: 10px;
+}
+.zero { 
+  width: 98%; 
+  height: auto;
+  display: block;
+  margin: -5% auto 50%;
+}
+ 
+  
+/* -- Produkt style zero.html -- */
+.produkt-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  flex-wrap: wrap;
+  margin-top: -50%;
+}
+
+.produkt1-container {
+  text-align: center;
+  margin: 0 20px;
+}
+
+.produkt1 {
+  max-width: 30%;
+}
+  /* -- zero summer produkt p -- */
+.zeroinfo {
+  margin-top: 1%;
+  font-size: 25px;
+  font-weight: 900;
+  font-family: myFirstfont;
+  color: white;
+  line-height: 1.5;
+  max-width: 500px;
+
+}
+  
+.zeroinfo2 {
+  font-size: 25px;
+  font-weight: 900;
+  font-family: myFirstfont;
+  color: white;
+  line-height: 1.5;
+  max-width: 500px;
+  margin-top:5px;
+}
+  
+  
+.kob-knap-container {
+  text-align: center;
+}
+
+.kob-knap {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #f5deb3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+  
+.kob-knap2 {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #a0c4c6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+  
+.kob-knap:hover,
+.kob-knap2:hover {
+  font-size:15px;
+  font-weight:bolder;
+}
+
+
+.kob-knap-container, .produkt-container {
+gap:70px;    
+  }
+
+  
+.in-view { /* Produktanimation */
+  opacity: 1;
+  transform: translateY(0);
+}
+/* Style for figcaption desktop */
+  
+.figcaption1 {
+  position:relative;
+  color: black;
+  }
+  
+  /* styling for Zero.html produkt info DESKTOP */
+  
+  #zerosummer-overskrift { 
+    color:white;
+    margin-top:25%
+  }
+
+.smag-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+}
+  
+h3 {
+  text-align: center;
+  font-size: 30px;
+  padding: 1px;
+  margin-top: 8%;
+  font-weight:bolder;
+  font-family: myFirstfont;
+  color: black;
+}
+ /* Gemt indhold liste zero.html Desktop */
+.hidden-list {
+  display: none;
+  list-style-type: none;
+}
+
+#info-list li {
+  display:flex;
+  flex-direction: row;
+  text-align:center;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  font-size: 20px;
+  color:white;
+}
+
+#toggle-heading {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  cursor: pointer;
+  font-family: myFirstfont;
+  color: white;
+  margin-top: 20%;
+}
+  
+  .indhold-container {
+   display: flex;
+  justify-content: center; 
+  }
+
+/* omos.html style ved brug af Grid */
+
+  
+.omosgrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+  background-color: #63a09a;
+  margin-left:6%;
+}
+  
+
+
+
+.letter {
+  background-color: #f5deb3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+.omos-tekst {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 900;
+  font-family: myFirstfont;
+  color: black;
+  line-height: 1.8;
+  max-width: 600px;
+  height:420px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:3px;
+  border: none;
+  padding: 20px; /* Tilføjer luft for at give lidt plads omkring teksten */
+}
+}
+
+.fa.fa {
+  padding: 1px;
+  font-size: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 20px -5px;
+  margin-left: 6px;
+  padding: 10px
+}
+
+
+@media screen and (max-width: 768px) {
+.products-container1 {
+  
+}
+
+.forside {
+  display: none;
+}
+
+.smag2 {
+  display: none;
+}
+
+}
+
+@media screen and (min-width: 1024px) {
+.products-container2 {
+  display:none;
+}
+
+.forsideimg2 {
+  display: none;
+}
+
+.smag1 {
+  display: none;
+}
+}
