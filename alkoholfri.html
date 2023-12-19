@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrøjborgBRYG</title>
+    <meta name="keywords" content="HTML5, CSS, JavaScript">
+    <link rel="icon" type="image/png" href="image/Logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://api.fontshare.com/v2/css?f=montserrat@500,700,701,801,200,401,301,400,601,100,101,201,800,300,600,501&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="fonts.googleapis.com/icon?family=Material+Icons">
+        <link href = "https://fonts.googleapis.com/icon?family=Material+Icons" rel = "stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="mobile.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Fjalla+One&family=Oswald&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+   <!--header -->
+    <header>
+        
+        <div class="topnav" id="myTopnav">
+            <div class="logo2">
+                <a href="index.html"><img src="image/Trøjborgbryg_logo.png" alt="logo"></a>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Produkter
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="error.html">Lys Liberté</a>
+                    <a href="error.html">Mørk lager</a>
+                    <a href="error.html">Tornado Tripel</a>
+                    <a href="error.html">IPA</a>
+                    <a href="zero.html"><Strong>NYHED</Strong> <br>Alkoholfri øl</a>
+                </div>
+            </div>
+          <div class="dropdown">
+                <button class="dropbtn">Webshop
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="alkoholfri.html">Lys Liberté</a>
+                    <a href="alkoholfri.html">Mørk lager</a>
+                    <a href="alkoholfri.html">Tornado Tripel</a>
+                    <a href="alkoholfri.html">IPA</a>
+                    <a href="alkoholfri.html"><Strong>NYHED</Strong> <br>Alkoholfri øl</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Tilbud
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Alkoholfri øl</a>
+                    <a href="error.html">Månedens kup</a>
+                    <a href="error.html">Smagekasser</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Information
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="om.html">Om TrøjborgBryg</a>
+                    <a href="error.html">Produktion</a>
+                    <a href="error.html">Levering</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Kontakt
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#" id="scrollToBottom">Kontakt os</a>
+                    <a href="#" id="scrollToBottom2">Sociale medier</a>
+                    <script src="script.js"></script> <!--JS for scrollToBottom -->
+                    <a href="error.html">Nyhedsbrev</a>
+                </div>
+            </div>
+
+            <div class="header__icons">
+                <a href="index.html"><span
+                        class="header__search">
+                        <i class="material-icons w3-xxxlarge">home</i>
+                    </span></a>
+                <a href="/error.html"><span class="header__shopping">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                        </svg>
+                    </span></a>
+            </div>
+            <a href="javascript:void(0);" style="font-size:35px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>   
+    </header>
+
+ <!--MAIN -->
+ <main>
+   
+   <h2 class="produktoverskrift">
+     Produkter
+   </h2>
+         <!--SHOP CONTAINER -->
+ <div id="shop-container">
+    <div id="shop">
+      <img src="image/endeligprodukt.jpg" alt="Produkt 1">
+      <h3>Zero summer citrus</h3>
+      <p>Øl & Citrus</p>
+      <p>0.0%</p>
+      <button onclick="addToCart()">Tilføj til kurv</button>
+    </div>
+   <!--SHOP1 -->
+         <div id="shop1">
+            <img src="image/pilsnerprodukt.jpg" alt="Produkt 2">
+            <h3>Zero summer pilsner</h3>
+            <p>Samme smag, færre kalorier</p>
+            <p>0.0%</p>
+            <button onclick="addToCart()">Tilføj til kurv</button>
+         </div>
+  <!--SHOP2 -->
+         <div id="shop2">
+            <img src="image/kommersnart.jpg" alt="Produkt 2">
+            <h3>IPA</h3>
+            <p>TrøjborgBryg IPA</p>
+            <p>4.5%</p>
+            <button onclick="addToCart()">Tilføj til kurv</button>
+         </div>
+   <!--SHOP3 -->
+         <div id="shop3">
+            <img src="image/kommersnart.jpg" alt="Produkt 2">
+            <h3>Mørk lager</h3>
+            <p>TrøjborgBryg Mørk øl</p>
+            <p>6.5%</p>
+            <button onclick="addToCart()">Tilføj til kurv</button>
+         </div>
+   <!--SHOP4 -->
+         <div id="shop4">
+            <img src="image/kommersnart.jpg" alt="Produkt 2">
+            <h3>Lys Liberté</h3>
+            <p>TrøjborgBryg Lys øl</p>
+            <p>4.5%</p>
+            <button onclick="addToCart()">Tilføj til kurv</button>
+         </div>
+   <!--SHOP5 -->
+         <div id="shop5">
+            <img src="image/kommersnart.jpg" alt="Produkt 2">
+            <h3>Tornado Tripel</h3>
+            <p>TrøjborgBryg Special øl</p>
+            <p>5.5%</p>
+            <button onclick="addToCart()">Tilføj til kurv</button>
+         </div>
+   </div>
+ </main>
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer__sections container">
+      <div class="footer__section">
+        <span class="footer__title">ØL</span>
+        <a href="#" class="footer__link">Alkoholfri</a>
+           <a href="#" class="footer__link">Lys øl</a>
+            <a href="#" class="footer__link">Mørk øl</a>
+                <a href="#" class="footer__link">Special øl</a>
+                    <a href="#" class="footer__link">IPA</a>
+      </div>
+      <div class="footer__section">
+        <span class="footer__title">TILBUD</span>
+        <a href="#" class="footer__link">Alkoholfri øl</a>
+            <a href="#" class="footer__link">Smagekasser</a>
+             <a href="#" class="footer__link">To for en</a>
+      </div>
+      <div class="footer__section">
+        <span class="footer__title">Information</span>
+        <a href="#" class="footer__link">Om TrøjborgBryg</a>
+            <a href="#" class="footer__link">Produktion</a>
+             <a href="#" class="footer__link">Levering</a>
+      </div>
+     <div class="footer__section">
+        <span class="footer__title">Kundeservice</span>
+        <a href="https://www.google.com/maps/place/Tordenskjoldsgade+15,+8200+Aarhus/data=!4m2!3m1!1s0x464c3fba54d6ce97:0xa453dc5d05d83c48?sa=X&ved=2ahUKEwiW96HC9PyCAxXwGBAIHZ-3Di4Q8gF6BAgPEAA"
+          target="_blank" class="footer__link">TrøjborgBRYG A/S<br></a>
+          <a href="#" class="footer__link">Tordenskjoldsgade 15 <br> DK 8200 Aarhus N</a><br>
+            <span class="footer__title">Kontakt</span>
+        <a href="#" class="footer__link">service@trøjborgbryg.dk</a>
+        <a href="#" class="footer__link"> +45 86 20 60 50</a>
+        <a href="index.html" target="_blank" class="fa fa-instagram"></a>
+        <a href="index.html" target="_blank" class="fa fa-facebook"></a> 
+        <a href="index.html" target="_blank" class="fa fa-twitter"></a>
+        <a href="index.html" target="_blank" class="fa fa-linkedin"></a>
+     </div>
+  </div>
+  </footer>
+</body>
+</html>
